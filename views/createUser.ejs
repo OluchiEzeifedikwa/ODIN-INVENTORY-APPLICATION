@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>FORMS</h1>
+    
+    <div class="form">
+        <form action="/new" method="POST">
+            <h3>ITEM INFORMATION</h3>
+            <label for="username">Item Name:</label>
+            <input type="text" id="username" name="username">
+            <br> 
+            <label for="quantity">Item Quantity:</label>
+            <input type="number" id="quantity" name="quantity">
+            <br>
+            <label for="price">Item Price:</label>
+            <input type="number" id="price" name="price">
+            <br>
+            <!-- <label for="username">Category:</label>
+            <input type="text" id="username" name="username">
+            <br> -->
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- <div id="display">
+
+    </div> -->
+    <a href="/new">Back To HomePage</a>
+</body>
+</html>

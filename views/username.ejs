@@ -1,0 +1,30 @@
+
+    
+      <!-- <% for (let i = 0; i < usernames.length; i++) { %>
+        
+          <div class="container"><%= usernames[i].username %></div>
+          
+          
+        
+      <% } %>
+    
+
+   -->
+
+   <nav>
+    <ul>
+      <% if (locals.usernames) {%>
+      <% for (let i = 0; i < usernames.length; i++) { %>
+        <li>
+          <!-- <div class="container"><%= usernames[i].username %> <%= usernames[i].quantity %> <%= usernames[i].price %>
+          </div>   -->
+          <div class="container"><%= usernames[i].userInput %> </div>
+          
+        </li>
+      <% } %>
+    </ul>
+</nav>
+
+<!-- <% for (let i = 0; i < userInput.length; i++) { %>   -->
+<!-- <% } %> -->
+  
