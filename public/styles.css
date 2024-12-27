@@ -1,10 +1,10 @@
 
 
-body {
+/* body {
     background-color: whitesmoke;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .img {
   opacity: 5.0;
@@ -64,7 +64,6 @@ body {
 
 .topnav a.split {
   float: right;
-  background-color: #04AA6D;
   color: white;
 }
 
@@ -91,11 +90,10 @@ body {
   top: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
+  color: white;
   width: 100%;
   transition: .5s ease;
   opacity:0.5;
-  color: white;
   font-size: 20px;
   padding: 20px;
   text-align: center;
@@ -144,14 +142,16 @@ body {
 
 /* Add styles to the form container */
 .container {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   margin: 20px;
   max-width: 300px;
   padding: 16px;
-  background-color: burlywood;
-  margin-top: -500px;
-  margin-right: -10px;
+  border: 2px solid black;
+  background-color: bisque;
+  height: 80px;
+  /* margin-top: -500px; */
+  /* margin-right: -10px; */
 }
 
 .content {

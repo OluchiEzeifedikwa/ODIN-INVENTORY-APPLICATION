@@ -3,9 +3,8 @@ const db = require("../db/queries");
 
 async function getUsernames(req, res) {
   const usernames = await db.getAllUsernames();
-  res.render("username", {usernames});
-  // console.log(usernames)
-  // console.log("Usernames: ", usernames);
+  console.log(usernames);
+  res.render('username', {usernames: usernames});
   // res.send("Usernames: " + usernames.map(user => user.username).join(", "));
 }
 
@@ -15,12 +14,13 @@ async function createUsernameGet(req, res) {
 }
 
 async function createUsernamePost(req, res) {
-  // const { username, quantity, price} = req.body;
-  const userInput = req.body;
-  await db.insertUsername(userInput);
-  res.render('card', { userInput });
+  const { username, quantity, price} = req.body;
+  // const userInput = req.body;
+  console.log(quantity);
+  await db.insertUsername(username, quantity, price);
+  // res.render('card', {username, quantity, price});
   // await db.insertUsername(username, quantity, price);
-  // res.redirect("/order");
+  res.redirect("/order");
   
 }
 

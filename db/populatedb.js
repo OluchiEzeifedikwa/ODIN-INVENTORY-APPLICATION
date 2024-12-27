@@ -3,12 +3,14 @@ const {Client} = require('pg');
 const SQL = `
 CREATE TABLE IF NOT EXISTS usernames (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  username VARCHAR ( 255 )
+  username VARCHAR ( 255 ), 
+  quantity INT,
+  price INT,
 );
 
-INSERT INTO usernames (username) 
+INSERT INTO usernames (username, quantity, price) 
 VALUES
-  (''),
+  ('pineapple', 100, 200),
   (''),
   (''),
   ('');
